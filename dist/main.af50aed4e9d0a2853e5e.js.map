@@ -1,0 +1,1 @@
+{"version":3,"file":"main.af50aed4e9d0a2853e5e.js","mappings":"mBAEAA,QAAQC,IAAI,0B","sources":["webpack://app/./src/index.js"],"sourcesContent":["import './styles/main.css';\n\nconsole.log('Hello Starter Template!');"],"names":["console","log"],"sourceRoot":""}
