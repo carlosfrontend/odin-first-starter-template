@@ -1,14 +1,15 @@
-const path = require("path");
-const { merge } = require("webpack-merge");
-const common = require("./webpack.common");
+const path = require('path');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common');
 
 module.exports = merge(common, {
-  mode: "development",
-  devtool: "inline-source-map",
+  mode: 'development',
+  devtool: 'inline-source-map',
   devServer: {
-    watchFiles: ["src/*.html"],
+    watchFiles: ['src/*.html'],
     static: {
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, 'dist'),
     },
     port: 3000,
     open: true,
@@ -20,7 +21,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
